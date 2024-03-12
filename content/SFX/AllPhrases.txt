@@ -1,0 +1,21 @@
+This halloween terror has a new name. Yours.#FirstMonologue1.wav
+The hunters are coming - bait them into your traps. But above all survive.#FirstMonologue2.wav#PrePhaseEnded.wav
+
+5... 4... 3...#5Sec.wav
+10... 9... 8...#10Sec.wav
+Fifteen seconds remaining#15Sec.wav
+Thirty seconds#30sec.wav
+Fourty five seconds remaining#45Sec.wav
+
+The're here#GhostHeartbeat.wav
+They see you#MurdererHeartbeat.wav
+
+The world is safe for now#NoGhostRemaining.wav
+The world would never be the same#TimeIsUp.wav
+The monsters were downed to one#OneGhostRemaining.wav
+
+You have been spotted#ScannedByLion.wav
+One of you is being tracked#Tracked.wav
+
+You can run. But you can't hide#ScannerLion.wav
+You've got some time to kill#ScannerJackal.wav

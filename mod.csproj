@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B07BDC3C-3770-4A07-90D8-5C2A68E2172B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Halloween</RootNamespace>
+    <AssemblyName>Halloween</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>
+    </DocumentationFile>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DGInput">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Duck Game\DGInput.dll</HintPath>
+    </Reference>
+    <Reference Include="DInput">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Duck Game\DInput.dll</HintPath>
+    </Reference>
+    <Reference Include="DuckGame">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Duck Game\DuckGame.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="NVorbis">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Duck Game\NVorbis.dll</HintPath>
+    </Reference>
+    <Reference Include="Steam, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Duck Game\Steam.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\Bloodlust\Floorblood.cs" />
+    <Compile Include="src\Bloodlust\Screenshake.cs" />
+    <Compile Include="src\Bloodlust\Toxic.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\ArcadeMachine.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Bat.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\BloodEmitter.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\BreakableByMovementDecor.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Cobweb.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\CoveredMachine.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\DBDHook.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\DeathZone.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Decoration.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Desk.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Dosya.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Drive.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\EEGG.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Graves.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\LiquidMAss.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\LiquidPart.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\MeatHanger.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Painting.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Pumpkin.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Rank.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Rats.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Scarecrow.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Sewery.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Swamp.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\TemperatyreZone.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\ThingTop.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Vase.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\VasePart.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\Well.cs" />
+    <Compile Include="src\Decorations A.K.A atmosphere\WheelChair.cs" />
+    <Compile Include="src\Main\DecorationsPlacer.cs" />
+    <Compile Include="src\Main\HLWNPortal.cs" />
+    <Compile Include="src\Main\localOutside.cs" />
+    <Compile Include="src\Main\RoomRect.cs" />
+    <Compile Include="src\Main\TUT_Mode.cs" />
+    <Compile Include="src\NetMessages\NMActivateDevice.cs" />
+    <Compile Include="src\NetMessages\NMApplyBleed.cs" />
+    <Compile Include="src\NetMessages\NMApplySave.cs" />
+    <Compile Include="src\NetMessages\NMBreakDevice.cs" />
+    <Compile Include="src\Points\PointsGetManager.cs" />
+    <Compile Include="src\Reskin\CustomHat.cs" />
+    <Compile Include="src\Main\GM_Event.cs" />
+    <Compile Include="src\Main\AutoUpdate.cs" />
+    <Compile Include="src\Main\DinamicSFX.cs" />
+    <Compile Include="src\Main\HalloweenLevel.cs" />
+    <Compile Include="src\Reskin\GhostSpawner.cs" />
+    <Compile Include="src\Reskin\MurdererSpawner.cs" />
+    <Compile Include="src\Main\OverlayMarker.cs" />
+    <Compile Include="src\Reskin\GhostSkin.cs" />
+    <Compile Include="src\Reskin\SkinChanger.cs" />
+    <Compile Include="src\Main\SubtitlesManager.cs" />
+    <Compile Include="src\Stats\HalloweenStats.cs" />
+    <Compile Include="src\Main\HLWN.cs" />
+    <Compile Include="src\Main\Mod.cs" />
+    <Compile Include="src\Main\StartBareer.cs" />
+    <Compile Include="src\Main\StrangerThings.cs" />
+    <Compile Include="src\Stats\HLWNData.cs" />
+    <Compile Include="src\Stats\PlayerStats.cs" />
+    <Compile Include="src\SubtitlesTranslate\EnglishSubtitles.cs" />
+    <Compile Include="src\SubtitlesTranslate\LanguageManager.cs" />
+    <Compile Include="src\SubtitlesTranslate\RussianSubtitles.cs" />
+    <Compile Include="src\SubtitlesTranslate\SpanishSubtitles.cs" />
+    <Compile Include="src\SubtitlesTranslate\Subtitles.cs" />
+    <Compile Include="src\Teams\CTEquipment.cs" />
+    <Compile Include="src\Teams\Fuse_armor.cs" />
+    <Compile Include="src\Teams\Ghost.cs" />
+    <Compile Include="src\Teams\Murder.cs" />
+    <Compile Include="src\Teams\TEquipment.cs" />
+    <Compile Include="src\Bloodlust\BloodLust.cs" />
+    <Compile Include="src\Temperature\VisualTemp.cs" />
+    <Compile Include="src\Traps\Claymore.cs" />
+    <Compile Include="src\Traps\Device.cs" />
+    <Compile Include="src\Traps\DoorFrame.cs" />
+    <Compile Include="src\Traps\EDD.cs" />
+    <Compile Include="src\Traps\Gas Canister.cs" />
+    <Compile Include="src\Traps\Gas Smoke.cs" />
+    <Compile Include="src\Traps\Grzmot.cs" />
+    <Compile Include="src\Traps\Kapkan.cs" />
+    <Compile Include="src\Traps\StunLight.cs" />
+    <Compile Include="src\TutorialElements\GhostTutorial.cs" />
+    <Compile Include="src\TutorialElements\Logomod.cs" />
+    <Compile Include="src\TutorialElements\MovingBody.cs" />
+    <Compile Include="src\TutorialElements\MurdererTutorial.cs" />
+    <Compile Include="src\Weapon&amp;Abilities\DetectorNode.cs" />
+    <Compile Include="src\Weapon&amp;Abilities\HForceWave.cs" />
+    <Compile Include="src\Weapon&amp;Abilities\HWChainsaw.cs" />
+    <Compile Include="src\Weapon&amp;Abilities\HWHammer.cs" />
+    <Compile Include="src\Weapon&amp;Abilities\HWSpear.cs" />
+    <Compile Include="src\Weapon&amp;Abilities\MurderMark.cs" />
+    <Compile Include="src\Weapon&amp;Abilities\RainforcableFloor.cs" />
+    <Compile Include="src\Weapon&amp;Abilities\RainforcableWall.cs" />
+    <Compile Include="src\Weapon&amp;Abilities\Step.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
